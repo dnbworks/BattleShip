@@ -1,47 +1,97 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+
 body {
   background-color: black;
 }
 
 div#board {
   position: relative;
-  width: 100%;
-  height: 100vh;
-  margin: auto;
-  background: url("board.jpg") no-repeat;
+  width: 700px;
+  margin:0 auto;
+  background:url("../assests/circle.png");
+  background-repeat:no-repeat;
+  background-size:100%;
+  background-position:center;
+
 }
 
 div#messageArea {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  
+  
   color: rgb(83, 175, 19);
 }
 
+.table-container {
+  margin-top:30px;
+  display:flex;
+  
+}
+
+.table-container ul li{
+  list-style:none;
+  color:#fff;
+  width: 60px;
+  height: 60px;
+  text-align:center;
+  line-height:60px;
+  font-family:san-serif;
+}
+
+
+
+div#board ul#num {
+  margin-left:50px;
+  list-style:none;
+  
+}
+
+div#board ul#num::after {
+  content:"";
+  display:block;
+  clear:both;
+  
+}
+
+div#board ul#num li{
+  float:left;
+  color:#fff;
+  width: 60px;
+  height: 60px;
+  text-align:center;
+  line-height:60px;
+  font-weight:bold;
+  font-family:san-serif;
+}
+
+
 table {
-  position: absolute;
-  left: 5px;
-  top: 50px;
+ 
   border-spacing: 0px;
 }
 
 td {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border: 1px solid #fff;
 }
 
 form {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
+  margin-left:50px;
   padding: 15px;
   background-color: rgb(83, 175, 19);
+  width:300px;
 }
 
 form input {
   background-color: rgb(152, 207, 113);
   border-color: rgb(83, 175, 19);
   font-size: 1em;
+  padding:3px 5px;
 }
 
 .hit {

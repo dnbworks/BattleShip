@@ -2,7 +2,8 @@
 // shortcut function to grab elements ById
 function $(id) {
     return document.getElementById(id);
- }
+}
+
 var view = {  
     displayMessage: function(msg) {
           var MessageArea = document.getElementById("messageArea");
@@ -10,7 +11,6 @@ var view = {
       },  
     displayHit: function(location) {
         var cell = document.getElementById(location);
-         // var cell = $(location);
              cell.setAttribute("class", "hit");
       },  
     displayMiss: function(location) {
